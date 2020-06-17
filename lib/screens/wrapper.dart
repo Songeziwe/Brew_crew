@@ -13,7 +13,6 @@ class _WrapperState extends State<Wrapper> {
   @override
   Widget build(BuildContext context) {
     final user = Provider.of<User>(context);
-    print("From Wrapper: $user");
 
     return user != null ? Home() : Authenticate();
   }
