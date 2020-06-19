@@ -14,6 +14,9 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Wrapper(),
+        theme: ThemeData.light().copyWith(
+          primaryColor: Colors.brown,
+        ),
       ),
     );
   }
